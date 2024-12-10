@@ -3,7 +3,7 @@ using namespace std;
 struct Node {
     struct Node *next = NULL, *prev = NULL;
     int data;
-} *head = NULL, *tail = NULL, *newNode;
+} *head = NULL, *tail = NULL, *newNode, *temp1 = NULL , *temp2 = NULL;
 
 
 int main(){
@@ -33,7 +33,17 @@ int main(){
         tail->next = newNode;
         tail = newNode;
     }
-    cout<<endl<<"Do you want to add more nodes (y/n) : ";
+
+    temp1 = head;
+    temp2 = tail;
+    while(temp1!=NULL){
+        cout<<temp1->data<<"->";
+        temp1 = temp1->next;
+    }
+    cout<<"X"
+
+    
+    cout<<endl<<"Do you want to add more nodes (y/n) : "<<endl;
     cin>>ch;
     }
     while(ch == 'y' || ch == 'Y' );

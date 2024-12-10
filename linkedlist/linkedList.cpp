@@ -40,6 +40,7 @@ void create() {
         temp->next = newNode;
 
     }
+    
     cout<<endl<<"Do you want to add more nodes (y/n) : ";
     cin>>ch;
     }
